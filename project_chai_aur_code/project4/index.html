@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .title{
+            font-size: 30px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(11, 6, 6, 0.957);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            margin: 10px;
+            height: 70px;
+            width: 200px;
+            color: white;
+            background-color: black;
+            border: none;
+            font-weight: 900;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Guess The number</div>
+        <div class="description">Guess a number between 1 to 100 ,you have 10 chances and win the price</div>
+        <form action="">
+            <input type="text" name="Number" id="num" placeholder="Enter the Number">
+            <input type="submit" value="Check" id="Check">
+        </form>
+        <div id="guessedNums"></div>
+        <div id="chances"></div>
+        <div class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

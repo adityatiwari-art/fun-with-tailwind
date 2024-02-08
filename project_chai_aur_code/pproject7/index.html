@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Using API(GITHUB) response</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Teko", sans-serif;
+      }
+      :root {
+        background-color: black;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+      #getProfile {
+        /* height: 30px; */
+        width: 20vw;
+        background-color: rgba(56, 53, 53, 0.868);
+        color: orangered;
+        font-weight: bolder;
+        font-size: 30px;
+        padding: 20px;
+        border: none;
+        border-radius: 8px;
+      }
+      #getProfile:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .card {
+        height: 70vh;
+        width: 25vw;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        display: none;
+      }
+      #DP {
+        height: 50%;
+        width: 100%;
+        border: 1px solid red;
+        background-position: center;
+        background-size: cover;
+      }
+      #username {
+        /* height: 20%; */
+        width: 100%;
+        color: orangered;
+        text-align: center;
+        font-size: 30px;
+      }
+      #fc {
+        /* height: 20%; */
+        width: 100%;
+        color: orange;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="card">
+        <div id="DP"></div>
+        <div id="username"></div>
+        <div id="fc"></div>
+      </div>
+      <button id="getProfile">GET USER DATA</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

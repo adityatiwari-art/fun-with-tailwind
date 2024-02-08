@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+    <style>
+      .container {
+        width: 60%;
+        border: 2px solid purple;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.881);
+        color: pink;
+      }
+      #height {
+        height: 30px;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid purple;
+      }
+      #weight {
+        height: 30px;
+        width: 50%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid purple;
+      }
+      #calculate{
+        height: 30px;
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid purple;
+      }
+      div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #title{
+        text-align: center;
+      }
+      .result{
+        /* border: 2px solid red; */
+        /* padding: 10px; */
+        background-color:red;
+        font-size: 20px;
+        /* height: 50px; */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="">
+        <div id="title">BMI calculator</div>
+        <div>
+          <label for="height">height in m: </label
+          ><input
+            type="text"
+            name="Height"
+            id="height"
+            placeholder="Enter Height"
+          />
+        </div>
+        <div>
+          <label for="height">weight in m: </label
+          ><input
+            type="text"
+            name="Weight"
+            id="weight"
+            placeholder="Enter weight"
+          />
+        </div>
+        <div id="calcbmi">
+          <input type="submit" id="calculate" value="Calculate"/>
+        </div>
+      </form>
+      <div class="result"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

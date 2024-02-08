@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    background-color: rgb(174, 0, 255);
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    border: 1px solid red;
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+#hamburger{
+    width: 60px;
+}
+#sitename{
+    color: white;
+    font-size: 40px;
+    font-family: hacked;
+    border: 1px solid white;
+    width: 98%;
+    text-align: center;
+}
+.icon{
+    height:30px;
+    width: 30px;
+    filter: invert(100%);
+    margin-left: 10px;
+    cursor: pointer;
+}
+.hamlist ul{
+    list-style: none;
+}
+
+.hamlist ul li {
+    margin: 20px;
+}
+.hamlist{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+background-color: rgb(255, 255, 255,0.4);
+backdrop-filter: blur(15px);
+display:none;
+}
+.close {
+    background:none;
+    border: none;
+    cursor:pointer;
+}
+button{
+    height: 30px;
+    width: 30px;
+}

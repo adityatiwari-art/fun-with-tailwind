@@ -1,0 +1,2 @@
+        not and or | ! && ||
+print(True)-->True | cout<<true;-->1

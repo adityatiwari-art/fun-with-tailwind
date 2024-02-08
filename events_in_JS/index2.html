@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+      }
+      .container1 {
+        border: 2px solid red;
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <ul id="images">
+        <li>
+          <img
+            id="image1"
+            src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            id="image2"
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            id="image3"
+            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            id="image4"
+            src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            id="image5"
+            src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
+            alt="photoshop"
+          />
+        </li>
+        <li><a id="google" href="www.google.com">Google</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElementById("image1").onclick=function(){
+    //     console.log("image 1 clicked");
+    // }
+
+    // like addEventListener() we have attackEvent() and in jQuery on
+
+    // event object and its properties (e is event object passed)
+    // document.querySelector("#image1").addEventListener('click',function(e){
+    //     console.log("iamge 1 clicked");
+    //     console.log(e);
+    // })
+
+    // important eventObject properties
+    // clientX (event position in x axis), clientY , type (type of event), screenX(screen position) , screenY
+    // altKey , ShiftKey , CtrlKey (true or false is pressed or not), keyCode(code of key pressed),key(key name), bubbles(bubble event propogation)
+    // timeStamp (time at which event happened ), defaultPrevented(to prevent the default event beahvior like clicking on the link redirects you can be prevented) , target (taargeted element that is on which the event happened),srcElement , currentTarget ,toElement
+
+    // one more attribute of addEventListener
+    // addEventListener(event,handler,EventpropogationType)  eventpropogationType is false by default there an be two types event bubbling(false) and Event Capturing(true)
+    // we know event propogation from child to parent by default known as bubbling  whose value if false
+    // bubbling event
+    // document.querySelector("#images").addEventListener('click',function(e){
+    //     console.log("ul clicked");
+    // },false)
+    // document.querySelector("#image1").addEventListener('click',function(e){
+    //     console.log("image 1 clicked");
+    // },false)
+    // output of above is like a bubble bottom to to i.e. image 1 clicked then ul clicked this is called bubbling event
+
+    // eventCaturing by true attribute value
+    // document.querySelector("#images").addEventListener('click',function(e){
+    //     console.log("ul clicked");
+    // },true)
+    // document.querySelector("#image1").addEventListener('click',function(e){
+    //     console.log("image 1 clicked");
+    // },true)
+    // output of above is like top to bottom i.e.ul clicked then  image 1 clicked this is called event capturing
+
+    // to stop event propogation (neither bubbling nor event caturing)
+    // document.querySelector("#images").addEventListener('click',function(e){
+    //     console.log("ul clicked");
+    // })
+    // document.querySelector("#image1").addEventListener('click',function(e){
+    //     console.log("image 1 clicked");
+    //     e.stopPropagation();
+    // })
+
+    // preventing default event behavior like clicking on the anchor tag redirects you
+    // document.querySelector("#google").addEventListener('click',function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault();  //prevent from redirecting
+    // })
+
+    // small project --clicking on images vanishes it
+
+    // document.querySelector("#images").children.forEach(addEventListener('click',function(e){
+    //     // console.log("child clicked");
+    //     if(e.target.tagName!=="LI"){
+    //     console.log(e.target)
+    //     console.log(e.target.parentNode.tagName)
+    //     e.target.parentNode.remove();
+    //     }
+    //     if(e.target.id==="google"){
+    //         e.stopPropagation();
+    //         e.preventDefault();
+    //     }
+    // }))
+    // getElemtnsByclassName returns a collection mnoy like getElementByid
+    
+    Array.from(document.querySelector("#images").children).forEach(e=>{e.addEventListener('click',function(e){
+        // console.log("child clicked");
+        if(e.target.tagName==="IMG"){
+        e.target.parentNode.remove();
+        console.log("image clicked");
+        }
+    })});
+    document.getElementsByClassName("container1")[0].addEventListener("click",function(e){
+        alert("container clicked")
+        console.log("container clicked");
+        // e.stopPropagation();
+      });
+
+  </script>
+</html>

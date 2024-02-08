@@ -1,0 +1,1 @@
+// e=document.querySelector("nav").querySelector("ul").firstElementChild.style.backgroundColor="green"

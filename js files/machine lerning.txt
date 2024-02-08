@@ -1,0 +1,44 @@
+ai-->ml-->dl-->
+data science uses all to some extent for prediction
+data mining -->to extract usesful info from huge amount of data set 
+**WEKA
+data-->info-->knowledge-->decision making
+model-->fuzzy logic
+fuzzylogy---analysing the values
+rather than the yes no boolean values
+learning
+supervised --under the supervision
+unsupervised--no supervisior/higher chances for errors
+semisupervised--fraction of supervised and unsupervised learning (less proportion of supervised)
+reinforcement --based on feedbacks positive and negativee feedback it keeps poitive feedback and works on the basis of it and learns form errors 
+for example a model moving in a matrix, for each corrrect path it will get a positive feedback and it optimises for negative feedback 
+
+supervised---classification(classes)--based on primitive parameters
+unsupervised---clusturing(clusters) --grouping on the basis of different parameters
+types of clustering--1.agglomerating clusteringf
+                                            recombing the clustures
+                     2.division clustering
+                                            division and subdivisio1ns
+data set---training set/data--problem and soln in data
+testing set --data having problems only
+validation data --checks for the actual and predicted data(error=ac-pre)
+                  actual validation is that for which model is trained only
+                  we can have single independent variable but multiple dependent variable
+formats of dataset--.csv
+                    .json--as key values pair
+                    .xml
+                    .txt
+                    video formats 
+                    audio format 
+EDA--exploratory data analysis ===to explore 
+                              1.  data understanding --understanging the data (what and why)
+                              2.  data cleaning(or preprocessing)--removing unwanted part of data
+                                        missing value identification 
+                                        null value identification/removal 
+                                        outlier detection 
+                                        sampling 
+                                        data balancing
+                              
+                               
+                                
+
